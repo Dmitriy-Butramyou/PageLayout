@@ -1,0 +1,382 @@
+@charset "utf-8";
+/* CSS Document */
+
+	 * {
+    margin: 0;
+    padding: 0;
+   }
+		body {
+			font-family: 'Libre Baskerville', serif;
+		}
+
+		.header {
+			background-image: url(img/final.png);
+			background-repeat: no-repeat;
+			background-position: bottom;
+			background-size: cover;
+			margin-top: 0px;
+			height: 670px;
+			
+		}
+		#test {
+			color: #f1da36;
+			margin-left: 6%;
+			text-decoration: none;
+			float: left;
+			margin-right: 24.4%;
+		}
+.menu_list {
+	position: relative;
+}
+.menu_drop {
+	position: absolute;
+	width: 100%;
+	left: 100%;
+	opacity: 0;
+	border-left: 2px solid transparent;
+	transition: 0.7s opacity;
+}
+.menu_list:hover .menu_drop{
+	opacity: 1;
+	top: 0;
+}
+.dws-menu {
+	position: absolute;
+	float: right;
+	animation-direction: normal;
+	animation: an-menu 2s ;
+	animation-fill-mode: forwards;
+	
+}
+
+@keyframes an-menu {
+	0% {left: 60%; opacity: 0;}
+	100%{left: 35.4%; opacity: 1;float: left;}
+	
+}
+.dws-menu2 {
+	position: absolute;
+	float: right;
+	animation-direction: normal;
+	animation: an-menu2 2s ;
+	animation-fill-mode: forwards;
+}
+
+@keyframes an-menu2 {
+	0% {right: 60%;opacity: 0;}
+	100%{right: 16.8%;opacity: 1; float: left;}
+}
+
+.dws-menu {
+	float: left;
+}
+.dws-menu *{
+	margin: 0;
+	padding: 0;
+}
+.dws-menu ul,
+.dws-menu ol {
+	list-style: none;
+}
+.dws-menu > ul{
+	display: flex;
+	justify-content: center;
+	float: left;
+
+}
+.dws-menu >ul li a{
+	display: block;
+	background: #fefcea;
+background: -moz-linear-gradient(top, #fefcea 0%, #f1da36 100%);
+background: -webkit-linear-gradient(top, #fefcea 0%,#f1da36 100%);
+background: linear-gradient(to bottom, #fefcea 0%,#f1da36 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#f1da36',GradientType=0 );
+	padding: 15px 15px 5px 15px;
+	font-size: 14px;
+	color: black;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.3s ease;
+}
+.dws-menu li a:hover{
+	background: #f1e767;
+background: -moz-linear-gradient(top, #f1e767 0%, #feb645 100%);
+background: -webkit-linear-gradient(top, #f1e767 0%,#feb645 100%);
+background: linear-gradient(to bottom, #f1e767 0%,#feb645 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645',GradientType=0 );
+	
+	box-shadow: 1px 5px 10px -5px black;
+	transition: all 0.3s ease;
+}
+
+.dws-menu li ul{
+	position: absolute;
+	min-width: 100px;
+	display: none;
+}
+.dws-menu li > ul li{
+	border: 1px solid #6F6910;
+}
+.dws-menu li >ul li a {
+	padding: 10px;
+	text-transform: none;
+	background-color: #E0E00C;
+}
+.dws-menu li:hover > ul{
+	position: absolute;
+	display: block;
+}
+.dws-menu li> ul li ul{
+	position: absolute;
+	right: -100%;
+	top: 0;
+}
+
+.dws-menu2 *{
+	margin: 0;
+	padding: 0;
+}
+.dws-menu2 ul,
+.dws-menu2 ol {
+	list-style: none;
+}
+.dws-menu2 > ul{
+	display: flex;
+	justify-content: center;
+	float: left;
+}
+.dws-menu2 >ul li a{
+	display: block;
+	background: #45484d;
+background: -moz-linear-gradient(top, #45484d 0%, #000000 100%);
+background: -webkit-linear-gradient(top, #45484d 0%,#000000 100%);
+background: linear-gradient(to bottom, #45484d 0%,#000000 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 );
+	padding: 15px 15px 5px 15px;
+	font-size: 14px;
+	color: #BCAC14;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.3s ease;
+}
+.dws-menu2 li a:hover{
+	background: #7d7e7d;
+background: -moz-linear-gradient(top, #7d7e7d 0%, #0e0e0e 100%);
+background: -webkit-linear-gradient(top, #7d7e7d 0%,#0e0e0e 100%);
+background: linear-gradient(to bottom, #7d7e7d 0%,#0e0e0e 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 );
+	
+	box-shadow: 1px 5px 10px -5px black;
+	transition: all 0.3s ease;
+}
+.dws-menu2 li ul{
+	position: absolute;
+	min-width: 100px;
+	display: none;
+}
+.dws-menu2 li > ul li{
+	border: 1px solid #6F6910;
+}
+.dws-menu2 li >ul li a {
+	padding: 10px;
+	text-transform: none;
+	background-color: #E0E00C;
+}
+.dws-menu2 li:hover > ul{
+	display: block;
+}
+.dws-menu2 li> ul li ul{
+	position: absolute;
+	right: -100%;
+	top: 0;
+}
+.menu_list::after {
+	content: " ";
+	position: absolute;
+	border: 7px solid;
+	border-color: transparent transparent transparent #8F2020;
+	top: 0.8em;
+	right: 0.7em;
+	transition: 0.5s;
+}
+.menu_list:hover::after{
+	transform: scaleX(-1);
+}
+.box1 {
+	position: absolute;
+	top: 300px;
+	list-style: none;
+	justify-content: center;
+	border-left: 7px solid #f1da36;
+	float: right;
+	
+}
+.text1 {
+	margin-left: 20px;
+	font-size: 250%;
+	color: #f1da36;
+	justify-content: center;
+	text-decoration: none;
+			
+}
+.text2 {
+	margin-left: 20px;
+	font-size: 450%;
+	color: #f1da36;
+	justify-content: center;		
+}
+.box2 {
+	position: absolute;
+	top: 300px;
+	list-style: none;
+	justify-content: center;
+}
+.text3 {
+	margin-left: 20px;
+	font-size: 450%;
+	color: black;
+	justify-content: center;
+}
+
+.box1 {
+	position: absolute;
+	float: right;
+	animation-direction: normal;
+	animation: an-text 2s ;
+	animation-fill-mode: forwards;
+}
+
+@keyframes an-text {
+	0% {left: 60%; opacity: 0;}
+	100%{left: 34.5%; opacity: 1;float: left}
+}
+.box2 {
+	position: absolute;
+	float: right;
+	animation-direction: normal;
+	animation: an-text2 2s ;
+	animation-fill-mode: forwards;
+}
+
+@keyframes an-text2 {
+	0% {right: 60%;opacity: 0;}
+	100%{right: 24%;opacity: 1; float: left;}
+}
+.content {
+	width:70%;
+    margin:auto;
+	margin-bottom: 100px;
+}
+.text4 {
+	text-align: center;
+	font-size: 300%;
+	color: black;
+}
+.headerTwo {
+	margin-top: 110px;
+
+}
+
+.imag_line {
+	margin-top: 0;
+	background-image: url(img/line3.png);
+	margin-bottom: 40px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	height: 50px;
+		
+}
+.connect {
+			background-image: url(img/final1.png);
+			background-repeat: no-repeat;
+			background-position: left;
+			background-size: cover;
+			margin-top: 0px;
+			height: 1000px;
+	}
+.headerThree {
+	margin: 0%;
+}
+.text5 {
+	text-align: center;
+	font-size: 300%;
+	color: white;
+}
+.content2 {
+	
+	width:70%;
+	margin:auto;;
+	margin-top: 60px;
+	
+}
+.name {
+	margin: auto;
+	width: 70%;
+	margin-top: 6%;
+	
+
+}
+
+input[type="text"] {
+	background: rgba(0, 0, 0, 0.1);
+	margin-left: 16.5%;
+	width: 63%;
+	height: 30px;
+	font-size: 1em;
+	color: snow;
+	margin-bottom: 25px;
+	border: 2px solid black;
+	border-radius: 4px;
+	
+}
+
+textarea {
+	background-color: transparent;
+	margin: 5px 0 20px 16.5%; 
+	width: 63%;
+	height: 100px;
+	font-size: 1.30em;
+	color: snow;
+	margin-bottom: 25px;
+	border: 2px solid black;
+	border-radius: 4px;
+	overflow: auto;
+}
+.dws-submit {
+	padding: 13px 30px;
+	margin: 5px 0 20px 16.5%;
+	width: 63%;
+	font-size: 1.5em;
+	color: black;
+	background: #fefcea;
+background: -moz-linear-gradient(top, #fefcea 0%, #f1da36 100%);
+background: -webkit-linear-gradient(top, #fefcea 0%,#f1da36 100%);
+background: linear-gradient(to bottom, #fefcea 0%,#f1da36 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#f1da36',GradientType=0 );
+	border: none;
+	cursor: pointer;
+	border-radius: 4px;
+}
+
+.dws-submit:hover {
+	color: #6A0609;
+	background: #f1e767;
+background: -moz-linear-gradient(top, #f1e767 0%, #feb645 100%);
+background: -webkit-linear-gradient(top, #f1e767 0%,#feb645 100%);
+background: linear-gradient(to bottom, #f1e767 0%,#feb645 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645',GradientType=0 );
+}
+#my-link {
+	color: #535353;
+	text-decoration: none;
+}
+.final {
+	width: 70%;
+	margin: auto;
+	margin-top: 10%;
+}
+
+#my-link:hover {
+	color: #848484;	
+}
